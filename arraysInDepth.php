@@ -74,3 +74,27 @@ $moreNumbers = [0, ...$numbers, 11];
 
 
 print_r($moreNumbers);
+
+[$first, $second] = $fruits;
+
+print_r($first);
+
+// Array's intersection
+
+$set1 = [1, 2, 3, 4, 5];
+$set2 = [4, 5, 6, 7, 8];
+
+print_r(array_intersect($set1, $set2));
+
+print_r(array_diff($set1, $set2));
+
+
+print_r(array_keys($associativeArray));
+
+print_r(array_values($associativeArray));
+
+echo array_key_exists('name', $associativeArray) . PHP_EOL;
+
+print_r(array_merge($set1, $set2));
+
+print_r($associativeArray + ['country' => 'USA']);
