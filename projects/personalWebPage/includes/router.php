@@ -24,6 +24,13 @@ function notFound(): void
     exit;
 }
 
+function badRequest(string $messageError = 'Bad request'): void
+{
+    http_response_code(400);
+    echo $messageError;
+    exit;
+}
+
 function dispatch(string $uri, string $method): void
 {
     // normalize the URI
