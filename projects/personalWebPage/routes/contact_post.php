@@ -16,3 +16,6 @@ if (empty($name) || empty($email) || empty($message)) {
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     badRequest();
 }
+
+
+connectDB();
